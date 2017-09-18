@@ -8,7 +8,12 @@
   border-radius: 2px;
 }
 
-.c-file-input {
+.c-file-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-file-upload input.c-file-input {
   position: absolute;
   top: 0;
   right: 0;
