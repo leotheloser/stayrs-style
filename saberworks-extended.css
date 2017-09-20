@@ -32,3 +32,8 @@
   width: 100%; 
   background-color: #f35675;
 }
+
+.u-sticky {
+  position: sticky!important;
+  top: 0;
+}
