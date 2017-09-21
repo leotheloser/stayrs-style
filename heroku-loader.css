@@ -1,0 +1,105 @@
+.light-bg{
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+
+.splash-screen {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    opacity: .5;
+    width: 38px;
+    margin: 0 auto;
+}
+
+.loading-spinner, .table-action-button i, .test-run-status-icon {
+    top: -2px;
+    position: relative;
+}
+
+.loading-spinner, .spinner {
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    position: relative;
+    vertical-align: middle;
+    height: 0px;
+    text-align: center;
+    display: block;
+    top: 8px;
+    left: 5px;
+    
+}
+
+.loading-spinner .dots {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute;
+}
+
+
+.loading-spinner i.spinner__dot.spinner__dot--one, .spinner i.spinner__dot.spinner__dot--one {
+    -webkit-animation-delay: -.2s;
+    animation-delay: -.2s;
+}
+
+.loading-spinner i.spinner__dot.spinner__dot--two, .spinner i.spinner__dot.spinner__dot--two {
+    -webkit-animation-delay: -.1s;
+    animation-delay: -.1s;
+}
+
+.loading-spinner i.spinner__dot, .spinner i.spinner__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #444;
+    -webkit-animation: pulse .85s infinite ease-in-out;
+    -o-animation: pulse .85s infinite ease-in-out;
+    animation: pulse .85s infinite ease-in-out;
+}
+
+
+.loading-spinner i.spinner__dot, .spinner i.spinner__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #444;   
+    -webkit-animation: pulse .85s infinite ease-in-out;
+    -o-animation: pulse .85s infinite ease-in-out;
+    animation: pulse .85s infinite ease-in-out;
+}
+
+@keyframes pulse{
+  0%, 100%, 80% {
+      opacity: 0;
+      transform: scale(.8);
+  }
+
+  40% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
